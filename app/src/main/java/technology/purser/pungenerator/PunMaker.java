@@ -30,7 +30,7 @@ public class PunMaker {
 
                 if(searchWords.get(txt) != null){
                     if(searchWords.get(txt).isNew(pun)){
-                        searchWords.put(txt, new Pun(pun));
+                        searchWords.get(txt).add(pun);
                         return pun;
 
 
